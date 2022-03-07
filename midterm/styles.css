@@ -1,0 +1,84 @@
+header {
+    color: white;
+    background-image: url(.//images/lone-starfish-wide.jpg);
+    background-position: 50% 50%;
+    font-size: 32px;
+    text-align: center;
+    padding: 100px;
+}
+/*changes font color to white, adds background image and centers it, font size 32px, align text to center, adds padding 100px */
+
+body {
+    background-color: #A9D4CF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: auto;
+    line-height: 1.5rem;
+    max-width: 1000px;
+}
+/*Changes background color, font set to Arial and size 18px. set margin to auto. line height to 1.5rem, max width to 1000px. */
+
+
+.container {
+    background-color: #d4e8e7;
+    padding: 10px;
+}
+/*Changes secondary background color to brighter blue via the container. Adds padding. */
+
+img {
+    width: 200px;
+    float: left;
+    margin: 20px;
+}
+/* Sets image resolution, float to left of page and margin for text*/
+
+
+.float {
+    float: left;
+}
+/* Floats text in section class to left, wrapping around the image*/
+
+nav {
+    padding: 20px;
+    text-align: center;
+}
+/* Adds padding between image and main page. Aligns navigation bar to center. */
+
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+    border-inline: 1px solid black;
+}
+/* Removes bullet points from list, adds left float for horizontal display, adds borders between options */
+
+nav a {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    padding-inline: 100px;
+}
+/* changes font style, size, and removes text decorations. Changes color to black. Extra padding for space in between options. */ 
+
+fieldset {
+    border: 0;
+}
+/* Removes borders from forms */ 
+
+textarea {
+    width: 800px;
+    height: 100px;
+}
+/* Makes textarea bigger. */
+
+.box {
+    border: 1px solid black;
+    border-width: 1px;
+    margin: 10px
+}
+/* Creates box around form */
+
+footer {
+    text-align: right;
+}
+/* Aligns copyright to right of page. */
