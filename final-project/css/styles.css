@@ -1,5 +1,6 @@
 
 @media screen and (min-width: 760px) {
+    /* Displays navigation bar horizontally for desktop */
     nav {
         display: inline-block;
         justify-content: center;
@@ -11,11 +12,16 @@
         margin-right: 30px;
     }
 
+    /* Centers text within buttons */
+    .services button {
+        text-align: center;
+    }
+
     .about img {
         display: flex;
         float: left;
     }
-    
+
     .digital {
         grid-area: digital;
         }
@@ -114,11 +120,12 @@ article {
 
 .about {
     background-color: #ffe6ac;
+    padding: 15px;
 }
 
 .about img {
     height: auto;
-    width: 760px;
+    width: 500px;
 }
 
 
@@ -136,7 +143,7 @@ h1 {
 }
 
 .main img {
-
+    display: none;
 }
 a:hover {
     color: black;
@@ -197,6 +204,16 @@ button:hover {
 }
 
 .vision img {
+    display: none;
+}
+
+.vision button {
+    margin: 10px;
+    width: 200px;
+    height: 75px;
+    font-size: 1.5em;
+    background-color: #c78c06;
+    color: black; 
 }
 
 .team div {
@@ -205,6 +222,14 @@ button:hover {
 
 .contact fieldset {
 border: 0;
+}
+
+form {
+    width: 50%;
+}
+
+.contact {
+    margin: 50px;
 }
 
 .hours table {
@@ -233,6 +258,5 @@ thead {
 footer {
     background-color: #222;
     color: #c78c06;
-    margin: auto;
 }
 
