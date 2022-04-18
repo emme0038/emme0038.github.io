@@ -1,32 +1,91 @@
-@media screen and (max-width: 760px;) {
-{ max-width: 760px;
-}
-}
-.container {
-    max-width: 1200px;
-}
+
+@media screen and (min-width: 760px) {
+    nav {
+        display: inline-block;
+        justify-content: center;
+    }
+    
+    nav li {
+        display: flex;
+        float: left;
+        margin-right: 30px;
+    }
+
+    .about img {
+        display: flex;
+        float: left;
+    }
+    
+    .digital {
+        grid-area: digital;
+        }
+        
+        .marketing {
+        grid-area: marketing;
+        }
+        
+        .video {
+        grid-area: video;
+        }
+        
+        .web {
+        grid-area: web;
+        }
+        
+        .print {
+        grid-area: print;
+        }
+    .services {          
+        grid-template-areas: "digital digital digital marketing marketing marketing"
+        "video video web web print print";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .john img {
+display: flex;
+float: left;
+flex-wrap: wrap;
+    }
+
+    .bob img {
+display: flex;
+float: right;
+flex-wrap: wrap;
+    }
+  }
 
 body {
     font-family: 'Open Sans', sans-serif;  
-    font-size: 1em;
-    margin: auto
+    font-size: 18px;
 }
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
 
-nav {
+header {
     background-color: #222;
+
 }
 
 nav li {
     text-decoration: none;
     list-style-type: none;
     color: black;
-    display: grid;
-    width: 100%
+display: flex;
+align-items: center;
 }
 
 nav button {
     width: 100%;
+}
+
+.search input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px;
 }
 
 .search button {
@@ -35,29 +94,45 @@ nav button {
 
 .main {
     background-image: url(/images/main-banner.jpg);
+    background-position: center;
     background-size: cover;
     color: white;
-    padding: 10px;
-    margin: auto;
+    padding: 50px;
+}
+
+button {
+    background-color: #222;
+    border: none;
+    color: #c78c06;
+    width: 10em;
+    height: 3em;
+}
+
+article {
+ background-color: black;
 }
 
 .about {
-    background-color: #ffe6ac; 
+    background-color: #ffe6ac;
 }
 
-.main h1 p {
-    background-color: black;
+.about img {
+    height: auto;
+    width: 760px;
 }
+
 
 .main button {
-    width: 250px;
-    height: 4em;
+    margin: 10px;
+    width: 200px;
+    height: 75px;
+    font-size: 1.5em;
     background-color: #c78c06;
-    color: black;
+    color: black; 
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 56px;
 }
 
 .main img {
@@ -86,31 +161,39 @@ button:hover {
     color: black;
 }
 
-button {
-    background-color: #222;
-    border: none;
-    color: #c78c06;
-    width: 10em;
-    height: 3em;
+.wrapper {
+    width: 100%;
+    margin: 0;
 }
-
-.about img{
-    margin-top: 10px;
-    width: fit-content;
-    height: fit-content;
+.services {
+    display: grid;
+    width: 760px;
+    margin: auto;
 }
 
 .services div {
     background-color: #ffe6ac; 
-    margin: 10px;
+    margin: 5px;
 }
+
+.services img {
+    width: 100%;
+}
+
+.services button {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    width: 200px;
+    height: 75px;
+    font-size: 1.5em;
+}
+
 
 .vision {
     background-image: url(/images/vision.jpg);
     background-position: center;
-    background-size: cover;
     color: white;
-    max-width:max-content;
 }
 
 .vision img {
@@ -121,38 +204,35 @@ button {
     background-color: #ffe6ac; 
 }
 
-.form {
-    display: grid;
-    margin: 100px;
+.contact fieldset {
+border: 0;
 }
 
-.digital {
-    grid-area: "digital";
-    }
-    
-    .marketing {
-    grid-area: "marketing";
-    }
-    
-    .video {
-    grid-area: "video";
-    }
-    
-    .web {
-    grid-area: "web";
-    }
-    
-    .print {
-    grid-area: "print";
-    }
-    
+.hours table {
+    border: 1px solid black;
+    width: 100%;
+    height: 5-[]
+}
 
-.services {
-    display: grid;
-    grid-template-areas: "digital digital digital marketing marketing marketing"
-    "video video web web print print";
-    grid-row: 1fr 1fr 1fr;
-    grid-column: 1fr 1fr 1fr;
+th {
+    background-color: #ffe6ac;
+    border: 1px solid black; 
+}
 
+tr {
+    border: 1px solid black;
+}
+
+thead {
+    border: 1px solid black;
+}
+
+.map {
+    width: 100%;
+}
+
+footer {
+    background-color: #222;
+    color: #c78c06;
 }
 

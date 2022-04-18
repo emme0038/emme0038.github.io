@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Connecting Open Sans -->
+    <!-- <link href="css/reset.css" rel="stylesheet" -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/4b8e7ad01d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins&display=swap"
         rel="stylesheet">
-        <link href="/CSS/styles.css" rel="stylesheet">
+    <link href="/CSS/styles.css" rel="stylesheet">
     <title>Final Project</title>
 </head>
 <!-- Start -->
@@ -22,51 +24,64 @@
         <header>
             <nav>
                 <ul>
-                <li><!-- Header background image -->
-                <img src="./images/logo.png" alt="logo">
-            </li>
-                <!-- Navigation List -->
-                
+                    <!-- Navigation List -->
+                    <li><img src="./images/logo.png" alt="logo"></li>
                     <li>
-                        <button><a href="#">Home</a></button>
+                        <button>
+                            <a href="#">Home</a>
+                        </button>
                     </li>
                     <li>
-                        <button><a href="#">About Us</a></button>
+                        <button>
+                            <a href="#">About Us</a>
+                        </button>
                     </li>
                     <li>
-                        <button><a href="#">Team</a></button>
+                        <button>
+                            <a href="#">Team</a>
+                        </button>
                     </li>
                     <li>
-                        <button><a href="#">Services</a></button>
+                        <button>
+                            <a href="#">Services</a>
+                        </button>
                     </li>
                     <li>
-                        <button><a href="#">Contact</a></button>
+                        <button>
+                            <a href="#">Contact</a>
+                        </button>
                     </li>
-                
-                <!-- Search bar with button-->
-                <li><div class="search">
-                <form>
-                    <input id="searchbar" type="text" placeholder="Search">
-                    <button>Search</button>
-                </form>
-            </li>
-            </ul>
-            </div>
+
+                    <!-- Search bar with button-->
+                    <li>
+                        <div class="search">
+                            <form>
+                                <input id="searchbar" type="text" placeholder="Search">
+                            </form>
+                    </li>
+                    <li>
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </li>
+                </ul>
+
             </nav>
         </header>
         <!-- Main section with background image and company introduction -->
         <section class="main">
             <img src="./images/main-banner.jpg" alt="main-banner">
-            <h1>Welcome to Three Star Media</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget lorem auctor, dictum felis sit
-                amet,
-                semper neque. Suspendisse egestas varius urna, sed blandit mi convallis a. Pellentesque blandit
-                scelerisque
-                odio, a consequat sapien egestas eu. Duis pharetra mi quis odio hendrerit lacinia. Maecenas viverra,
-                tellus
-                ac dapibus elementum, lacus neque mollis elit, ac commodo neque tortor et augue. Pellentesque aliquam
-                viverra libero in mattis. Sed laoreet ex libero.</p>
-            <button>Connect With Us</button>
+            <article>
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget lorem auctor, dictum felis sit
+                    amet,
+                    semper neque. Suspendisse egestas varius urna, sed blandit mi convallis a. Pellentesque blandit
+                    scelerisque
+                    odio, a consequat sapien egestas eu. Duis pharetra mi quis odio hendrerit lacinia. Maecenas viverra,
+                    tellus
+                    ac dapibus elementum, lacus neque mollis elit, ac commodo neque tortor et augue. Pellentesque
+                    aliquam
+                    viverra libero in mattis. Sed laoreet ex libero.</p>
+                <button>Connect With Us <i class="fa-solid fa-caret-right"></i></button>
+            </article>
         </section>
         <!-- About section -->
         <section class="about">
@@ -81,8 +96,9 @@
                 aspernatur rerum.</p>
         </section>
         <!-- Services section with button -->
+
+        <h2>Our Services</h2>
         <section class="services">
-            <h2>Our Services</h2>
             <div class="digital">
                 <img src="./images/digital.jpg" alt="digital">
                 <h3>Digital Transformation</h3>
@@ -91,7 +107,7 @@
                     temporibus nobis corporis labore delectus beatae accusamus, aperiam illum hic cupiditate dicta
                     placeat,
                     enim, necessitatibus distinctio.</p>
-                <button>Digital Plans</button>
+                <button>Digital Plans <i class="fa-solid fa-caret-right"></i></button>
             </div>
             <!-- Marketing section with button -->
             <div class="marketing">
@@ -101,7 +117,7 @@
                     corporis placeat amet error expedita aliquam quis maiores, rem quam deserunt enim molestiae
                     perferendis
                     debitis soluta.</p>
-                <button>Marketing Plans</button>
+                <button>Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
             </div>
             <!-- Video section with button -->
             <div class="video">
@@ -110,7 +126,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore voluptatum libero cum fugit
                     neque deleniti repellat dolor repellendus sit provident aliquam, ullam amet possimus. Ullam ut quos
                     cum consectetur?</p>
-                <button>Video Plans</button>
+                <button>Video Plans <i class="fa-solid fa-caret-right"></i></button>
             </div>
             <!-- Web section with button -->
             <div class="web">
@@ -121,7 +137,7 @@
                     magnam molestias aperiam amet impedit! Placeat nulla tenetur officia error animi voluptatum quam
                     fugit
                     debitis!</p>
-                <button>Web Plans</button>
+                <button>Web Plans <i class="fa-solid fa-caret-right"></i></button>
             </div>
             <!-- Print section with button -->
             <div class="print">
@@ -130,44 +146,50 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis magnam velit expedita
                     culpa, commodi sint ut saepe porro, dicta quia libero tempora molestias reiciendis officia nobis cum
                     eveniet quasi.</p>
-                <button>Print Plans</button>
+                <button>Print Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
         </section>
-    </div>
-    <!-- Our vision section -->
-    <section class="vision">
-        <img src="./images/vision.jpg" alt="vision">
-        <h3>Our Vision</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit tempore nulla quia ut error voluptas
-            molestias
-            reiciendis quidem? Deserunt odit provident labore veniam officia fugiat ullam minus doloremque tempore
-            nobis.</p>
-        <button>Learn More</button>
-    </section>
-    <!-- Start of "our team" section -->
-    <section class="team">
-        <h2>Our Team</h2>
-        <!-- John Doe -->
-        <div class="john">
-            <img src="./images/john.jpg" alt="johndoe">
-            <h3>John Doe</h3>
-            <h4>CEO and Owner</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores, quia architecto fuga
-                maiores
-                molestias laborum ipsum doloribus eligendi alias dolorem aut temporibus tenetur, ducimus tempora
-                accusamus quisquam. Velit, ut!</p>
+
+        <div class="wrapper">
+            <!-- Our vision section -->
+            <section class="vision">
+                <img src="./images/vision.jpg" alt="vision">
+                <h3>Our Vision</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit tempore nulla quia ut error voluptas
+                    molestias
+                    reiciendis quidem? Deserunt odit provident labore veniam officia fugiat ullam minus doloremque
+                    tempore
+                    nobis.</p>
+                <button>Learn More <i class="fa-solid fa-caret-right"></i></button>
+            </section>
         </div>
-        <!-- Bob Rite -->
-        <div class="bob">
-            <img src="./images/bob.jpg" alt="bobrite">
-            <h3>Bob Rite</h3>
-            <h4>CFO and Co-Owner</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, odit molestias expedita laboriosam
-                vel
-                excepturi sint velit sit, eum similique cupiditate maiores minima quam quis repellat aliquid
-                incidunt
-                dignissimos quod?</p>
-        </div>
-    </section>
+        <!-- Start of "our team" section -->
+        <section class="team">
+            <h2>Our Team</h2>
+            <!-- John Doe -->
+            <div class="john">
+                <img src="./images/john.jpg" alt="johndoe">
+                <h3>John Doe</h3>
+                <h4>CEO and Owner</h4>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores, quia architecto fuga
+                    maiores
+                    molestias laborum ipsum doloribus eligendi alias dolorem aut temporibus tenetur, ducimus tempora
+                    accusamus quisquam. Velit, ut!</p>
+            </div>
+            <!-- Bob Rite -->
+            <div class="bob">
+                <img src="./images/bob.jpg" alt="bobrite">
+                <h3>Bob Rite</h3>
+                <h4>CFO and Co-Owner</h4>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, odit molestias expedita laboriosam
+                    vel
+                    excepturi sint velit sit, eum similique cupiditate maiores minima quam quis repellat aliquid
+                    incidunt
+                    dignissimos quod?</p>
+            </div>
+        </section>
         <!-- Contact information -->
         <section class="contact">
             <h2>Contact Us</h2>
@@ -175,44 +197,27 @@
             <!-- Input for customer info -->
             <!-- Full name -->
             <form>
-                <label for="fullname">Name</label>
-                <input id="fullname">
+                <fieldset>
+                    <label for="fullname">Name</label>
+                    <input id="fullname">
+                </fieldset>
 
-            <!-- E-mail -->
+                <!-- E-mail -->
+                <fieldset>
+                    <label for="email">E-mail</label>
+                    <input id="email">
+                </fieldset>
 
-                <label for="email">E-mail</label>
-                <input id="email">
-
-            <!-- A message -->
- 
-                <label for="message">Your Message</label>
-                <textarea id="message"></textarea>
+                <!-- A message -->
+                <fieldset>
+                    <label for="message">Your Message</label>
+                    <textarea id="message"></textarea>
+                </fieldset>
             </form>
             <button>Send</button>
-        </section>
+        
         <!-- Hours of operation -->
-        <section class="hours">
-            <h3>Hours of operation</h3>
-            <!-- Table showing company hours -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Days</th>
-                        <th>Hours</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday-Friday</td>
-                        <td>9AM - 6PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday-Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+
         <!-- Location section -->
         <section class="location">
             <h3>Location</h3>
@@ -220,17 +225,17 @@
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358904.92640412407!2d-76.0350881671875!3d45.3499278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648845679739!5m2!1sen!2sca"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </section>
         </section>
         <!-- Footer with copyright information -->
         <footer>
             <p>&copy; Copyright Three Star Media, 2022</p>
             <p>All images taken from <a href="https://unsplash.com/">Unsplash</a></p>
         </footer>
-        <!-- End -->
-    </section>
+    </div>
+    <!-- End -->
 </body>
-
 </html>
