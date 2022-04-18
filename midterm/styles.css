@@ -8,6 +8,10 @@ header {
 }
 /*changes font color to white, adds background image and centers it, font size 32px, align text to center, adds padding 100px */
 
+h1, h3 {
+    padding: 10px 
+}
+
 body {
     background-color: #A9D4CF;
     font-family: Arial, Helvetica, sans-serif;
