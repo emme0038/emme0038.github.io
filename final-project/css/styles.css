@@ -104,7 +104,7 @@ nav li button {
 
 /* adds and centers the banner image, changes the text color to white and adds padding */
 .main {
-    background-image: url(/images/main-banner.jpg);
+    background-image: url(images/main-banner.jpg);
     background-position: center;
     background-size: cover;
     color: white;
@@ -232,8 +232,6 @@ hr {
 .contact fieldset {
 border: 0;
 }
-
-
 
 th {
     background-color: #ffe6ac;
