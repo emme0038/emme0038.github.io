@@ -40,8 +40,6 @@ table {
 @media screen and (min-width: 760px) {
     nav {
         display: inline-block;
-        align-items: center;
-        justify-content: center;
     }
 
     /* Removes decorations from list, Displays navigation bar horizontally for desktop */
@@ -66,7 +64,7 @@ table {
 
     /* Floats image to wrap around text */
     .about img {
-        display: block;
+        display: inline;
         float: left;
         padding-bottom: 20px;
     }
@@ -164,7 +162,7 @@ nav li button {
 }
 
 .search {
-    display: inline-block;
+    display: block;
     float: left;
 }
 
@@ -256,9 +254,6 @@ button:hover {
     margin: 5px;
 }
 
-.services img {
-    width: 100%;
-}
 
 .services button {
     background-color: black;
@@ -313,11 +308,9 @@ thead {
     border: 1px solid black;
 }
 
-table {
-    width: 100%;
-}
 
 footer {
     background-color: #222;
     color: #c78c06;
 }
+
