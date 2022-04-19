@@ -1,9 +1,47 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 @media screen and (min-width: 760px) {
     nav {
         display: inline-block;
-        align-content: center;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Removes decorations from list, Displays navigation bar horizontally for desktop */
@@ -31,6 +69,10 @@
         display: block;
         float: left;
         padding-bottom: 20px;
+    }
+
+    .about {
+        padding-bottom: 30px;
     }
 
     /* Setting grid area template */
@@ -64,15 +106,38 @@
 
     /* Floating text around image */
     .john img {
-        display: inline-block;
+        display: flex;
         float: left;
     }
 
     /* Floating text around image */
     .bob img {
-        display: inline-block;
+        display: flex;
         float: right;
     }
+/* Grid for form location and hours */
+    .message {
+        grid-area: message;
+    }
+
+    .location {
+        grid-area: location;
+    }
+
+    .hours {
+        grid-area: hours;
+    }
+
+    .contact {
+        display: grid;
+        width: 100%;
+        grid-template-areas: "message location" 
+        "hours hours";
+        grid-template-rows: 500px 250;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
 }
 
 /* Max width of container is 1200px. */
@@ -205,7 +270,7 @@ button:hover {
 }
 
 .vision {
-    background-image: url(./images/vision.jpg);
+    background-image: url(/images/vision.jpg);
     background-position: center;
     color: white;
 }
@@ -246,6 +311,10 @@ td {
 
 thead {
     border: 1px solid black;
+}
+
+table {
+    width: 100%;
 }
 
 footer {
