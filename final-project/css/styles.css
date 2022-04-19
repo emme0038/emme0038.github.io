@@ -6,20 +6,20 @@
         align-content: center;
     }
 
-    /* Removes decorations from list, Displays navigation bar horizontally for desktop */ 
-nav li {
-    list-style-type: none;
-    display: flex;
-    float: left;
-    padding-right: 50px;
-}
+    /* Removes decorations from list, Displays navigation bar horizontally for desktop */
+    nav li {
+        list-style-type: none;
+        display: flex;
+        float: left;
+        padding-right: 50px;
+    }
 
-/* Changes search bar size */
-.search input {
-    padding: 10px;
-    width: 80%;
-    margin: 10px;
-}
+    /* Changes search bar size */
+    .search input {
+        padding: 10px;
+        width: 80%;
+        margin: 10px;
+    }
 
     /* Centers text within buttons */
     .services button {
@@ -36,53 +36,54 @@ nav li {
     /* Setting grid area template */
     .digital {
         grid-area: digital;
-        }
-        
-        .marketing {
+    }
+
+    .marketing {
         grid-area: marketing;
-        }
-        
-        .video {
+    }
+
+    .video {
         grid-area: video;
-        }
-        
-        .web {
+    }
+
+    .web {
         grid-area: web;
-        }
-        
-        .print {
+    }
+
+    .print {
         grid-area: print;
-        }
-        /* Grid set up (Digital and marketing on top, video, web, and print on bottom */
-    .services {          
+    }
+
+    /* Grid set up (Digital and marketing on top, video, web, and print on bottom */
+    .services {
         grid-template-areas: "digital digital digital marketing marketing marketing"
-        "video video web web print print";
+            "video video web web print print";
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
-/* Floating text around image */
+    /* Floating text around image */
     .john img {
-display: inline-block;
-float: left;
+        display: inline-block;
+        float: left;
     }
 
-/* Floating text around image */
+    /* Floating text around image */
     .bob img {
-display: inline-block;
-float: right;
+        display: inline-block;
+        float: right;
     }
-  }
+}
 
-  /* Max width of container is 1200px. */
+/* Max width of container is 1200px. */
 .container {
     max-width: 1200px;
     margin: auto;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
-    display: block;  
+    display: block;
 
-}    
+}
 
 /* Changes nav background to black. */
 header {
@@ -104,7 +105,7 @@ nav li button {
 
 /* adds and centers the banner image, changes the text color to white and adds padding */
 .main {
-    background-image: url(/images/main-banner.jpg);
+    background-image: url(../images/main-banner.jpg);
     background-position: center;
     background-size: cover;
     color: white;
@@ -122,7 +123,7 @@ button {
 
 /* Sets main background */
 article {
- background-color: black;
+    background-color: black;
 }
 
 .about {
@@ -135,14 +136,13 @@ article {
     width: auto;
 }
 
-
 .main button {
     margin: 10px;
     width: 200px;
     height: 75px;
     font-size: 1.5em;
     background-color: #c78c06;
-    color: black; 
+    color: black;
 }
 
 h1 {
@@ -152,6 +152,7 @@ h1 {
 .main img {
     display: none;
 }
+
 a:hover {
     color: black;
 }
@@ -178,6 +179,7 @@ button:hover {
 .wrapper {
     width: 100%;
 }
+
 .services {
     display: grid;
     width: 760px;
@@ -185,7 +187,7 @@ button:hover {
 }
 
 .services div {
-    background-color: #ffe6ac; 
+    background-color: #ffe6ac;
     margin: 5px;
 }
 
@@ -218,11 +220,11 @@ button:hover {
     height: 75px;
     font-size: 1.5em;
     background-color: #c78c06;
-    color: black; 
+    color: black;
 }
 
 .team div {
-    background-color: #ffe6ac; 
+    background-color: #ffe6ac;
 }
 
 hr {
@@ -230,12 +232,12 @@ hr {
 }
 
 .contact fieldset {
-border: 0;
+    border: 0;
 }
 
 th {
     background-color: #ffe6ac;
-    border: 1px solid black; 
+    border: 1px solid black;
 }
 
 td {
@@ -250,4 +252,3 @@ footer {
     background-color: #222;
     color: #c78c06;
 }
-
