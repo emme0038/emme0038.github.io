@@ -1,27 +1,38 @@
 
 @media screen and (min-width: 760px) {
-    /* Displays navigation bar horizontally for desktop */
     nav {
         display: inline-block;
-        justify-content: center;
+        align-content: center;
     }
-    
-    nav li {
-        display: flex;
-        float: left;
-        margin-right: 30px;
-    }
+
+    /* Removes decorations from list, Displays navigation bar horizontally for desktop */ 
+nav li {
+    list-style-type: none;
+    text-decoration-style: none;
+    display: flex;
+    float: left;
+    padding-right: 50px;
+}
+
+/* Changes search bar size */
+.search input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px;
+}
 
     /* Centers text within buttons */
     .services button {
         text-align: center;
     }
 
+    /* Floats image to wrap around text */
     .about img {
         display: flex;
         float: left;
     }
 
+    /* Setting grid area template */
     .digital {
         grid-area: digital;
         }
@@ -41,6 +52,7 @@
         .print {
         grid-area: print;
         }
+        /* Grid set up (Digital and marketing on top, video, web, and print on bottom */
     .services {          
         grid-template-areas: "digital digital digital marketing marketing marketing"
         "video video web web print print";
@@ -48,56 +60,49 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
+/* Floating text around image */
     .john img {
-display: flex;
+display: inline-block;
 float: left;
-flex-wrap: wrap;
     }
 
+/* Floating text around image */
     .bob img {
-display: flex;
+display: inline-block;
 float: right;
-flex-wrap: wrap;
     }
   }
 
-body {
-    font-family: 'Open Sans', sans-serif;  
-    font-size: 18px;
-}
-
+  /* Max width of container is 1200px. */
 .container {
     max-width: 1200px;
     margin: auto;
-}
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    display: block;  
 
+}    
+
+/* Changes nav background to black. */
 header {
     background-color: #222;
-
 }
 
 nav li {
-    text-decoration: none;
+    text-decoration-style: none;
     list-style-type: none;
-    color: black;
-display: flex;
-align-items: center;
 }
 
-nav button {
+nav li button {
     width: 100%;
 }
 
-.search input {
-    padding: 10px;
-    width: 80%;
-    margin: 10px;
+.search {
+    display: inline-block;
+    float: left;
 }
 
-.search button {
-    width: auto;
-}
-
+/* adds and centers the banner image, changes the text color to white and adds padding */
 .main {
     background-image: url(/images/main-banner.jpg);
     background-position: center;
@@ -106,6 +111,7 @@ nav button {
     padding: 50px;
 }
 
+/* Main button */
 button {
     background-color: #222;
     border: none;
@@ -114,18 +120,18 @@ button {
     height: 3em;
 }
 
+/* Sets main background */
 article {
  background-color: black;
 }
 
 .about {
     background-color: #ffe6ac;
-    padding: 15px;
 }
 
 .about img {
-    height: auto;
-    width: 500px;
+    height: 300px;
+    width: auto;
 }
 
 
@@ -139,7 +145,7 @@ article {
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 48px;
 }
 
 .main img {
@@ -196,7 +202,6 @@ button:hover {
     font-size: 1.5em;
 }
 
-
 .vision {
     background-image: url(/images/vision.jpg);
     background-position: center;
@@ -220,39 +225,27 @@ button:hover {
     background-color: #ffe6ac; 
 }
 
+hr {
+    color: #c78c06;
+}
+
 .contact fieldset {
 border: 0;
 }
 
-form {
-    width: 50%;
-}
 
-.contact {
-    margin: 50px;
-}
-
-.hours table {
-    border: 1px solid black;
-    width: 100%;
-    height: 5-[]
-}
 
 th {
     background-color: #ffe6ac;
     border: 1px solid black; 
 }
 
-tr {
+td {
     border: 1px solid black;
 }
 
 thead {
     border: 1px solid black;
-}
-
-.map {
-    width: 100%;
 }
 
 footer {
